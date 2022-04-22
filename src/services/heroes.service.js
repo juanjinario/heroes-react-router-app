@@ -2,11 +2,12 @@ import { heroesData } from "../data/heroes.data"
 
 const heroesList = heroesData;
 
-export const getHeroeById = ({ heroId }) => {
+export const getHeroById = ({ heroId }) => {
+  console.log('get Hero ID');
   return heroesList.find(hero => hero.id === heroId);
 }
 
-export const getHeroesByPublisher = ({ publisher }) => {
+export const getHerosByPublisher = ({ publisher }) => {
   const validPublishers = ['DC Comics', 'Marvel Comics'];
   if (!validPublishers.includes(publisher)) {
     throw new Error(`${ publisher } is not a valid Publiser`);
