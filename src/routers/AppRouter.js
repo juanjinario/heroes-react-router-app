@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import NavbarComponent from '../components/navbar.component'
 import { DcScreen } from '../screens/dc/dc.screen'
 import LoginScreen from '../screens/login/login.screen'
 import MarvelScreen from '../screens/marvel/marvel.screen'
