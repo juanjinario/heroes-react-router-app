@@ -3,8 +3,15 @@ import { heroesData } from "../data/heroes.data"
 const heroesList = heroesData;
 
 export const getHeroById = ({ heroId }) => {
-  console.log('get Hero ID');
   return heroesList.find(hero => hero.id === heroId);
+}
+
+export const getHeroesByName = ({ name = '' }) => {
+  if (name === '') {
+    return [];
+  }
+  name = name.toLocaleLowerCase();
+  return heroesList.filter( hero => hero.superhero.toLocaleLowerCase().includes(name));
 }
 
 export const getHerosByPublisher = ({ publisher }) => {

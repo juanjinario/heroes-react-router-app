@@ -6,9 +6,7 @@ import HeroesApp from './containers/HeroesApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <HeroesApp />
-  </React.StrictMode>
+  <HeroesApp />
 );
 
 // If you want to start measuring performance in your app, pass a function
